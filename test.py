@@ -6,7 +6,7 @@ import json
 import pprint
 from urllib.request import Request, urlopen
 
-# Output generation for a Pokémon species(name or id) or berry (name or id)
+# Grabs information from a url for a Pokémon species(name or id) or berry (name or id)
 def getWebpage(loader):
     url = loader.url
     # All info of a loader is stored in url.
@@ -65,6 +65,6 @@ def main():
         
         else:
             print('Input invalid. Please try again.')
-            
+
 if(__name__ == '__main__'):
     main()
